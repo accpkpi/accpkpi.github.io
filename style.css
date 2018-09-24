@@ -1,0 +1,96 @@
+/* Main elements */
+
+input[type=text] {
+    width: 75px;
+    text-align: center;
+    font-family: "Times New Roman", serif;
+}
+
+input[type=button] {
+    width: 100px;
+    text-align: center;
+    font-family: "Times New Roman", serif;
+}
+
+/* Navigation bar */
+
+nav {
+    width: 1350px;
+    margin: 0 auto;
+}
+
+nav:before {
+    content: '';
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: grey;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 50px;
+}
+
+ul li {
+    float: left;
+
+}
+
+ul li a {
+    color:#fff;
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+ul li a:hover {
+    background: #d34d43;
+}
+
+.imgCenter {
+    text-align: center;
+}
+
+/* Image center */
+.image img {
+    display: block;
+    margin: 0 auto;
+}
+
+.image p {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+}
+
+/* Text style */
+
+p {
+    font-family: "Times New Roman", serif;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.introduction p{
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.tableBorder table {
+
+}
