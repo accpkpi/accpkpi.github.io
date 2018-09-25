@@ -228,13 +228,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537856673791" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537858052311" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../webTraining/JavaScriptPractices/003HTMLtoPDF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\github\accpkpi\accpkpi.github.io\src\js" />
       <recent name="D:\projects\github\accpkpi\accpkpi.github.io\src" />
     </key>
   </component>
@@ -262,12 +263,12 @@
       <updated>1537768718277</updated>
       <workItem from="1537768720694" duration="5896000" />
       <workItem from="1537797640996" duration="2019000" />
-      <workItem from="1537847041420" duration="1311000" />
+      <workItem from="1537847041420" duration="1903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9226000" />
+    <option name="totallyTimeSpent" value="9818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
