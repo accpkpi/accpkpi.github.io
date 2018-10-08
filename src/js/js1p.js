@@ -133,7 +133,7 @@ function generateCSV() {
         arr[i] = getRowData(10,i-75,10);
     }
 
-    return downloadExcelCsv(arr, "1.csv");
+    return downloadExcelCsv(arr, "export_1.csv");
 }
 
 function getRowData(tableN, rowN, length) {
