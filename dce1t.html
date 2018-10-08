@@ -3,9 +3,9 @@
     <title>DCE1T</title>
     <link rel="stylesheet" href="style.css">
     <script src="src/js/script.js"></script>
+    <script src="src/js/js1p.js"></script>
     <meta charset="UTF-8">
 </head>
-
 <body>
 <nav>
     <ul>
@@ -17,11 +17,11 @@
         <li><a href="contacts.html">Контакти</a></li>
     </ul>
 </nav>
-<p>Порівняння критеріїв ефективності відносно глобальної мети</p>
+<p id="p11">Порівняння критеріїв ефективності відносно глобальної мети</p>
 <table> <!-- Go into center -->
     <!-- 1 -->
     <tr>
-        <td><input type="text" id="c111"></td> <!-- 1 -->
+        <td><input type="text" id="c111" value=""></td> <!-- 1 -->
         <td><input type="text" id="c112" value="ВЧК" contenteditable="false"></td> <!-- 2 -->
         <td><input type="text" id="c113" value="НЧК" contenteditable="false"></td> <!-- 3 -->
         <td><input type="text" id="c114" value="ЗПД" contenteditable="false"></td> <!-- 4 -->
@@ -30,10 +30,10 @@
         <td><input type="text" id="c117" value="МР" contenteditable="false"></td> <!-- 7 -->
         <td><input type="text" id="c118" value="МВ" contenteditable="false"></td> <!-- 8 -->
         <td><input type="text" id="c119" value="ВМ" contenteditable="false"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 2"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c1110"value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c1111" value="Вектор спосіб 2"></td> <!-- 11 -->
+        <td><input type="text" id="c1112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c1113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <!-- 2 -->
     <tr>
@@ -176,7 +176,7 @@
         7.000,	3.000,	4.000,	0.500,	3.000,	5.000,	1.000,	6.000,
         3.000,	0.333,	0.200,	0.143,	0.143,	0.200,	0.167,	1.000)" value="defaultValues">
 <input type="button" onclick="calculate(1,8,13,8,10)" value="Calculate">
-<p>Порівняння альтернатив відносно критерія ефективності – «Визначено чинники кризи»</p>
+<p id="p12">Порівняння альтернатив відносно критерія ефективності – «Визначено чинники кризи»</p>
 <table>
     <tr> <!-- 1 -->
         <td><input type="text" id="c211" style="font-weight: bold" value="ВЧК"></td> <!-- 1 -->
@@ -185,9 +185,9 @@
         <td><input type="text" id="c214" value="РНК"></td> <!-- 4 -->
         <td><input type="text" id="c215" value="ЛНК"></td> <!-- 5 -->
         <td><input type="text" id="c216" value="РНП"></td> <!-- 6 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 7 -->
-        <td><input type="text" value="Вектор спосіб 2"></td> <!-- 8 -->
-        <td><input type="text" value="Cik"></td>
+        <td><input type="text" id="c217" value="Вектор спосіб 1"></td> <!-- 7 -->
+        <td><input type="text" id="c218" value="Вектор спосіб 2"></td> <!-- 8 -->
+        <td><input type="text" id="c219" value="Cik"></td>
     </tr>
     <tr> <!-- 2 -->
         <td><input type="text" id="c221" value="ПДК"></td> <!-- 1 -->
@@ -262,7 +262,7 @@
         0.125,	0.111,	0.333,	1.000,	0.143,
         0.333,	0.200,	5.000,	7.000,	1.000)" value="defaultvalues">
 <input type="button" onclick="calculate(2,5,10,5,10)" value="Calculate">
-<p>Порівняння альтернатив відносно критерія ефективності –  «Нейтралізовано чинники кризи»</p>
+<p id="p13">Порівняння альтернатив відносно критерія ефективності –  «Нейтралізовано чинники кризи»</p>
 <table>
     <tr> <!-- 1 -->
         <td><input type="text" id="c311" style="font-weight: bold" value="НЧК"></td> <!-- 1 -->
@@ -271,9 +271,9 @@
         <td><input type="text" id="c314" value="РНК"></td> <!-- 4 -->
         <td><input type="text" id="c315" value="ЛНК"></td> <!-- 5 -->
         <td><input type="text" id="c316" value="РНП"></td> <!-- 6 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 7 -->
-        <td><input type="text" value="Вектор спосіб 2"></td> <!-- 8 -->
-        <td><input type="text" value="Cik"></td>
+        <td><input type="text" id="c317" value="Вектор спосіб 1"></td> <!-- 7 -->
+        <td><input type="text" id="c318" value="Вектор спосіб 2"></td> <!-- 8 -->
+        <td><input type="text" id="c319" value="Cik"></td>
     </tr>
     <tr> <!-- 2 -->
         <td><input type="text" id="c321" value="ПДК"></td> <!-- 1 -->
@@ -348,7 +348,7 @@
         0.200,	0.111,	0.143,	1.000,	1.000,
         0.200,	0.125,	0.143,	1.000,	1.000)" value="defaultValues">
 <input type="button" onclick="calculate(3,5,10,5,10)" value="Calculate">
-<p>Порівняння альтернатив відносно критерія ефективності – «Забезпеченість підготовленості дій під час кризи»</p>
+<p id="p14">Порівняння альтернатив відносно критерія ефективності – «Забезпеченість підготовленості дій під час кризи»</p>
 <table>
     <tr> <!-- 1 -->
         <td><input type="text" id="c411" style="font-weight: bold" value="ЗПД"></td> <!-- 1 -->
@@ -357,9 +357,9 @@
         <td><input type="text" id="c414" value="РНК"></td> <!-- 4 -->
         <td><input type="text" id="c415" value="ЛНК"></td> <!-- 5 -->
         <td><input type="text" id="c416" value="РНП"></td> <!-- 6 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 7 -->
-        <td><input type="text" value="Вектор спосіб 2"></td> <!-- 8 -->
-        <td><input type="text" value="Cik"></td>
+        <td><input type="text" id="c417" value="Вектор спосіб 1"></td> <!-- 7 -->
+        <td><input type="text" id="c418" value="Вектор спосіб 2"></td> <!-- 8 -->
+        <td><input type="text" id="c419" value="Cik"></td>
     </tr>
     <tr> <!-- 2 -->
         <td><input type="text" id="c421" value="ПДК"></td> <!-- 1 -->
@@ -434,7 +434,7 @@
         0.111,	0.125,	0.333,	1.000,	0.143,
         0.200,	0.500,	5.000,	7.000,	1.000)" value="defultValues">
 <input type="button" onclick="calculate(4,5,10,5,10)" value="Calculate">
-<p>Порівняння альтернатив відносно критерія ефективності – «Відновлення іміджу та репутації держави»</p>
+<p id="p15">Порівняння альтернатив відносно критерія ефективності – «Відновлення іміджу та репутації держави»</p>
 <table>
     <tr> <!-- 1 -->
         <td><input type="text" id="c511" style="font-weight: bold" value="ВІтаРД"></td> <!-- 1 -->
@@ -443,9 +443,9 @@
         <td><input type="text" id="c514" value="РНК"></td> <!-- 4 -->
         <td><input type="text" id="c515" value="ЛНК"></td> <!-- 5 -->
         <td><input type="text" id="c516" value="РНП"></td> <!-- 6 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 7 -->
-        <td><input type="text" value="Вектор спосіб 2"></td> <!-- 8 -->
-        <td><input type="text" value="Cik"></td>
+        <td><input type="text" id="c517" value="Вектор спосіб 1"></td> <!-- 7 -->
+        <td><input type="text" id="c518" value="Вектор спосіб 2"></td> <!-- 8 -->
+        <td><input type="text" id="c519" value="Cik"></td>
     </tr>
     <tr> <!-- 2 -->
         <td><input type="text" id="c521" value="ПДК"></td> <!-- 1 -->
@@ -520,7 +520,7 @@
 7.000,	6.000,	5.000,	1.000,	3.000,
 5.000,	2.000,	3.000,	0.333,	1.000)" value="DefaultValues">
 <input type="button" onclick="calculate(5,5,10,5,10)" value="Calculate">
-<p>Порівняння альтернатив відносно критерія ефективності – «Усунуто загрози»</p>
+<p id="p16">Порівняння альтернатив відносно критерія ефективності – «Усунуто загрози»</p>
 <table>
     <tr> <!-- 1 -->
         <td><input type="text" id="c611" style="font-weight: bold" value="УЗ"></td> <!-- 1 -->
@@ -529,9 +529,9 @@
         <td><input type="text" id="c614" value="РНК"></td> <!-- 4 -->
         <td><input type="text" id="c615" value="ЛНК"></td> <!-- 5 -->
         <td><input type="text" id="c616" value="РНП"></td> <!-- 6 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 7 -->
-        <td><input type="text" value="Вектор спосіб 2"></td> <!-- 8 -->
-        <td><input type="text" value="Cik"></td>
+        <td><input type="text" id="c617" value="Вектор спосіб 1"></td> <!-- 7 -->
+        <td><input type="text" id="c618" value="Вектор спосіб 2"></td> <!-- 8 -->
+        <td><input type="text" id="c619" value="Cik"></td>
     </tr>
     <tr> <!-- 2 -->
         <td><input type="text" id="c621" value="ПДК"></td> <!-- 1 -->
@@ -606,7 +606,7 @@
 0.125,	0.111,	0.143,	1.000,	0.333,
 0.143,	0.125,	0.200,	3.000,	1.000)" value="DefaulValues">
 <input type="button" onclick="calculate(6,5,10,5,10)" value="Calculate">
-<p>Порівняння альтернатив відносно критерія ефективності –  «Мінімізовано ризики»</p>
+<p id="p17">Порівняння альтернатив відносно критерія ефективності –  «Мінімізовано ризики»</p>
 <table>
     <tr> <!-- 1 -->
         <td><input type="text" id="c711" style="font-weight: bold" value="МР"></td> <!-- 1 -->
@@ -615,9 +615,9 @@
         <td><input type="text" id="c714" value="РНК"></td> <!-- 4 -->
         <td><input type="text" id="c715" value="ЛНК"></td> <!-- 5 -->
         <td><input type="text" id="c716" value="РНП"></td> <!-- 6 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 7 -->
-        <td><input type="text" value="Вектор спосіб 2"></td> <!-- 8 -->
-        <td><input type="text" value="Cik"></td>
+        <td><input type="text" id="c717" value="Вектор спосіб 1"></td> <!-- 7 -->
+        <td><input type="text" id="c718" value="Вектор спосіб 2"></td> <!-- 8 -->
+        <td><input type="text" id="c719" value="Cik"></td>
     </tr>
     <tr> <!-- 2 -->
         <td><input type="text" id="c721" value="ПДК"></td> <!-- 1 -->
@@ -692,7 +692,7 @@
 0.143,	0.143,	0.143,	1.000,	0.500,
 0.200,	0.125,	0.200,	2.000,	1.000)" value="DefaultValues">
 <input type="button" onclick="calculate(7,5,10,5,10)" value="Calculate">
-<p>Порівняння альтернатив відносно критерія ефективності – «Мінімізовано втрати»</p>
+<p id="p18">Порівняння альтернатив відносно критерія ефективності – «Мінімізовано втрати»</p>
 <table>
     <tr> <!-- 1 -->
         <td><input type="text" id="c811" style="font-weight: bold" value="МВ"></td> <!-- 1 -->
@@ -701,9 +701,9 @@
         <td><input type="text" id="c814" value="РНК"></td> <!-- 4 -->
         <td><input type="text" id="c815" value="ЛНК"></td> <!-- 5 -->
         <td><input type="text" id="c816" value="РНП"></td> <!-- 6 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 7 -->
-        <td><input type="text" value="Вектор спосіб 2"></td> <!-- 8 -->
-        <td><input type="text" value="Cik"></td>
+        <td><input type="text" id="c817" value="Вектор спосіб 1"></td> <!-- 7 -->
+        <td><input type="text" id="c818" value="Вектор спосіб 2"></td> <!-- 8 -->
+        <td><input type="text" id="c819" value="Cik"></td>
     </tr>
     <tr> <!-- 2 -->
         <td><input type="text" id="c821" value="ПДК"></td> <!-- 1 -->
@@ -778,7 +778,7 @@
 2.000,	0.500,	0.200,	1.000,	7.000,
 0.333,	0.125,	0.111,	0.143,	1.000)" value="defaultValues">
 <input type="button" onclick="calculate(8,5,10,5,10)" value="Calculate">
-<p>Порівняння альтернатив відносно критерія ефективності –  «Використано можливості»</p>
+<p id="p19">Порівняння альтернатив відносно критерія ефективності –  «Використано можливості»</p>
 <table>
     <tr> <!-- 1 -->
         <td><input type="text" id="c911" style="font-weight: bold" value="ВМ"></td> <!-- 1 -->
@@ -787,9 +787,9 @@
         <td><input type="text" id="c914" value="РНК"></td> <!-- 4 -->
         <td><input type="text" id="c915" value="ЛНК"></td> <!-- 5 -->
         <td><input type="text" id="c916" value="РНП"></td> <!-- 6 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 7 -->
-        <td><input type="text" value="Вектор спосіб 2"></td> <!-- 8 -->
-        <td><input type="text" value="Cik"></td>
+        <td><input type="text" id="c917" value="Вектор спосіб 1"></td> <!-- 7 -->
+        <td><input type="text" id="c918" value="Вектор спосіб 2"></td> <!-- 8 -->
+        <td><input type="text" id="c919" value="Cik"></td>
     </tr>
     <tr> <!-- 2 -->
         <td><input type="text" id="c921" value="ПДК"></td> <!-- 1 -->
@@ -864,22 +864,22 @@
 3.000,	0.500,	3.000,	1.000,	3.000,
 1.000,	0.200,	0.500,	0.333,	1.000)" value="defaultValues">
 <input type="button" onclick="calculate(9,5,10,5,10)" value="Calculate">
-<p>Глобальні пріоритети альтернатив відносно глобальної мети</p>
+<p id="p110">Глобальні пріоритети альтернатив відносно глобальної мети</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text"></td> <!-- 1 -->
-        <td><input type="text" value="ВЧК"></td> <!-- 2 -->
-        <td><input type="text" value="НЧК"></td> <!-- 3 -->
-        <td><input type="text" value="ЗПД"></td> <!-- 4 -->
-        <td><input type="text" value="ВІтаРД"></td> <!-- 5 -->
-        <td><input type="text" value="УЗ"></td> <!-- 6 -->
-        <td><input type="text" value="МР"></td> <!-- 7 -->
-        <td><input type="text" value="МВ"></td> <!-- 8 -->
-        <td><input type="text" value="ВМ"></td> <!-- 9 -->
-        <td><input type="text" value="Результат"></td> <!-- 10 -->
+        <td><input type="text" id="c1011"></td> <!-- 1 -->
+        <td><input type="text" id="c1012" value="ВЧК"></td> <!-- 2 -->
+        <td><input type="text" id="c1013" value="НЧК"></td> <!-- 3 -->
+        <td><input type="text" id="c1014" value="ЗПД"></td> <!-- 4 -->
+        <td><input type="text" id="c1015" value="ВІтаРД"></td> <!-- 5 -->
+        <td><input type="text" id="c1016" value="УЗ"></td> <!-- 6 -->
+        <td><input type="text" id="c1017" value="МР"></td> <!-- 7 -->
+        <td><input type="text" id="c1018" value="МВ"></td> <!-- 8 -->
+        <td><input type="text" id="c1019" value="ВМ"></td> <!-- 9 -->
+        <td><input type="text" id="c10110" value="Результат"></td> <!-- 10 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="ПДК"></td> <!-- 1 -->
+        <td><input type="text" id="c1021" value="ПДК"></td> <!-- 1 -->
         <td><input type="text" id="c1022"></td> <!-- 2 -->
         <td><input type="text" id="c1023"></td> <!-- 3 -->
         <td><input type="text" id="c1024"></td> <!-- 4 -->
@@ -892,7 +892,7 @@
 
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ПВІК"></td> <!-- 1 -->
+        <td><input type="text" id="c1031" value="ПВІК"></td> <!-- 1 -->
         <td><input type="text" id="c1032"></td> <!-- 2 -->
         <td><input type="text" id="c1033"></td> <!-- 3 -->
         <td><input type="text" id="c1034"></td> <!-- 4 -->
@@ -904,7 +904,7 @@
         <td><input type="text" id="c10310"></td> <!-- 10 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="РНК"></td> <!-- 1 -->
+        <td><input type="text" id="c1041" value="РНК"></td> <!-- 1 -->
         <td><input type="text" id="c1042"></td> <!-- 2 -->
         <td><input type="text" id="c1043"></td> <!-- 3 -->
         <td><input type="text" id="c1044"></td> <!-- 4 -->
@@ -916,7 +916,7 @@
         <td><input type="text" id="c10410"></td> <!-- 10 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="ЛНК"></td> <!-- 1 -->
+        <td><input type="text" id="c1051" value="ЛНК"></td> <!-- 1 -->
         <td><input type="text" id="c1052"></td> <!-- 2 -->
         <td><input type="text" id="c1053"></td> <!-- 3 -->
         <td><input type="text" id="c1054"></td> <!-- 4 -->
@@ -929,7 +929,7 @@
 
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="РНП"></td> <!-- 1 -->
+        <td><input type="text" id="c1061" value="РНП"></td> <!-- 1 -->
         <td><input type="text" id="c1062"></td> <!-- 2 -->
         <td><input type="text" id="c1063"></td> <!-- 3 -->
         <td><input type="text" id="c1064"></td> <!-- 4 -->
@@ -942,5 +942,6 @@
     </tr>
 </table>
 <input type="button" onclick="calculateFinal(5,8,10,11,10)" value="Calculate">
+<input type="button" onclick="generateCSV()" value="GenerateCSV">
 </body>
 </html>

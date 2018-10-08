@@ -1,9 +1,10 @@
 <html>
 <head>
     <title>DCE2T</title>
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script src="src/js/script.js"></script>
+    <script src="src/js/js2p.js"></script>
+    <meta charset="UTF-8">
 </head>
 <body>
 <nav>
@@ -16,25 +17,25 @@
         <li><a href="contacts.html">Контакти</a></li>
     </ul>
 </nav>
-<p>Порівняння критеріїв ефективності відносно глобальної цілі – ефективних кризових комунікацій в державному управлінні</p>
+<p id="p11">Порівняння критеріїв ефективності відносно глобальної цілі – ефективних кризових комунікацій в державному управлінні</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text"></td> <!-- 1 -->
-        <td><input type="text" value="ВЧК"></td> <!-- 2 -->
-        <td><input type="text" value="НЧК"></td> <!-- 3 -->
-        <td><input type="text" value="ЗПД"></td> <!-- 4 -->
-        <td><input type="text" value="ВІтаРД"></td> <!-- 5 -->
-        <td><input type="text" value="УЗ"></td> <!-- 6 -->
-        <td><input type="text" value="МР"></td> <!-- 7 -->
-        <td><input type="text" value="МВ"></td> <!-- 8 -->
-        <td><input type="text" value="ВМ"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 4"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c111"></td> <!-- 1 -->
+        <td><input type="text" id="c112" value="ВЧК"></td> <!-- 2 -->
+        <td><input type="text" id="c113" value="НЧК"></td> <!-- 3 -->
+        <td><input type="text" id="c114" value="ЗПД"></td> <!-- 4 -->
+        <td><input type="text" id="c115" value="ВІтаРД"></td> <!-- 5 -->
+        <td><input type="text" id="c116" value="УЗ"></td> <!-- 6 -->
+        <td><input type="text" id="c117" value="МР"></td> <!-- 7 -->
+        <td><input type="text" id="c118" value="МВ"></td> <!-- 8 -->
+        <td><input type="text" id="c119" value="ВМ"></td> <!-- 9 -->
+        <td><input type="text" id="c1110" value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c1111" value="Вектор спосіб 4"></td> <!-- 11 -->
+        <td><input type="text" id="c1112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c1113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="ВЧК"></td> <!-- 1 -->
+        <td><input type="text" id="c121" value="ВЧК"></td> <!-- 1 -->
         <td><input type="text" id="c122" value="1.000"></td> <!-- 2 -->
         <td><input type="text" id="c123" onkeyup="reverseValue(123,132)"></td> <!-- 3 -->
         <td><input type="text" id="c124" onkeyup="reverseValue(124,142)"></td> <!-- 4 -->
@@ -50,7 +51,7 @@
         <td><input type="text" id="c1214"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="НЧК"></td> <!-- 1 -->
+        <td><input type="text" id="c131" value="НЧК"></td> <!-- 1 -->
         <td><input type="text" id="c132" onkeyup="reverseValue(132,123)"></td> <!-- 2 -->
         <td><input type="text" id="c133" value="1.000"></td> <!-- 3 -->
         <td><input type="text" id="c134" onkeyup="reverseValue(134,143)"></td> <!-- 4 -->
@@ -66,7 +67,7 @@
         <td><input type="text" id="c1314"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="ЗПК"></td> <!-- 1 -->
+        <td><input type="text" id="c141" value="ЗПК"></td> <!-- 1 -->
         <td><input type="text" id="c142" onkeyup="reverseValue(142,124)"></td> <!-- 2 -->
         <td><input type="text" id="c143" onkeyup="reverseValue(143,143)"></td> <!-- 3 -->
         <td><input type="text" id="c144" value="1.000"></td> <!-- 4 -->
@@ -82,7 +83,7 @@
         <td><input type="text" id="c1414"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="ВІтаРД"></td> <!-- 1 -->
+        <td><input type="text" id="c151" value="ВІтаРД"></td> <!-- 1 -->
         <td><input type="text" id="c152" onkeyup="reverseValue(152,125)"></td> <!-- 2 -->
         <td><input type="text" id="c153" onkeyup="reverseValue(153,135)"></td> <!-- 3 -->
         <td><input type="text" id="c154" onkeyup="reverseValue(154,145)"></td> <!-- 4 -->
@@ -98,7 +99,7 @@
         <td><input type="text" id="c1514" value="1.41"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="УЗ"></td> <!-- 1 -->
+        <td><input type="text" id="c161" value="УЗ"></td> <!-- 1 -->
         <td><input type="text" id="c162" onkeyup="reverseValue(162,126)"></td> <!-- 2 -->
         <td><input type="text" id="c163" onkeyup="reverseValue(163,136)"></td> <!-- 3 -->
         <td><input type="text" id="c164" onkeyup="reverseValue(164,146)"></td> <!-- 4 -->
@@ -114,7 +115,7 @@
         <td><input type="text" id="c1614"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 7 -->
-        <td><input type="text" value="МР"></td> <!-- 1 -->
+        <td><input type="text" id="c171" value="МР"></td> <!-- 1 -->
         <td><input type="text" id="c172" onkeyup="reverseValue(172,127)"></td> <!-- 2 -->
         <td><input type="text" id="c173" onkeyup="reverseValue(173,137)"></td> <!-- 3 -->
         <td><input type="text" id="c174" value="1.000"></td> <!-- 4 -->
@@ -128,7 +129,7 @@
         <td><input type="text" id="c1712"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="МВ"></td> <!-- 1 -->
+        <td><input type="text" id="c181" value="МВ"></td> <!-- 1 -->
         <td><input type="text" id="c182" onkeyup="reverseValue(182,128)"></td> <!-- 2 -->
         <td><input type="text" id="c183" onkeyup="reverseValue(183,138)"></td> <!-- 3 -->
         <td><input type="text" id="c184" onkeyup="reverseValue(184,148)"></td> <!-- 4 -->
@@ -142,7 +143,7 @@
         <td><input type="text" id="c1812"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="ВМ"></td> <!-- 1 -->
+        <td><input type="text" id="c191" value="ВМ"></td> <!-- 1 -->
         <td><input type="text" id="c192" onkeyup="reverseValue(192,129)"></td> <!-- 2 -->
         <td><input type="text" id="c193" onkeyup="reverseValue(193,139)"></td> <!-- 3 -->
         <td><input type="text" id="c194" onkeyup="reverseValue(194,149)"></td> <!-- 4 -->
@@ -166,25 +167,25 @@
         7.000,	3.000,	4.000,	0.500,	3.000,	5.000,	1.000,	6.000,
         3.000,	0.333,	0.200,	0.143,	0.143,	0.200,	0.167,	1.000)" value="default">
 <input type="button" onclick="calculate(1,8,13,8,10)" value="Calculate">
-<p>Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Визначено чинники кризи»</p>
+<p id="p12">Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Визначено чинники кризи»</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text" value="ВЧК"></td> <!-- 1 -->
-        <td><input type="text" value="НК"></td> <!-- 2 -->
-        <td><input type="text" value="ЗК"></td> <!-- 3 -->
-        <td><input type="text" value="УВ"></td> <!-- 4 -->
-        <td><input type="text" value="МП"></td> <!-- 5 -->
-        <td><input type="text" value="ВК"></td> <!-- 6 -->
-        <td><input type="text" value="ПВ"></td> <!-- 7 -->
-        <td><input type="text" value="І"></td> <!-- 8 -->
-        <td><input type="text" value="В"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 4"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c211" value="ВЧК"></td> <!-- 1 -->
+        <td><input type="text" id="c212" value="НК"></td> <!-- 2 -->
+        <td><input type="text" id="c213" value="ЗК"></td> <!-- 3 -->
+        <td><input type="text" id="c214" value="УВ"></td> <!-- 4 -->
+        <td><input type="text" id="c215" value="МП"></td> <!-- 5 -->
+        <td><input type="text" id="c216" value="ВК"></td> <!-- 6 -->
+        <td><input type="text" id="c217" value="ПВ"></td> <!-- 7 -->
+        <td><input type="text" id="c218" value="І"></td> <!-- 8 -->
+        <td><input type="text" id="c219" value="В"></td> <!-- 9 -->
+        <td><input type="text" id="c2110" value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c2111" value="Вектор спосіб 4"></td> <!-- 11 -->
+        <td><input type="text" id="c2112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c2113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="НК"></td> <!-- 1 -->
+        <td><input type="text" id="c221" value="НК"></td> <!-- 1 -->
         <td><input type="text" id="c222" value="1.000"></td> <!-- 2 -->
         <td><input type="text" id="c223" onkeyup="reverseValue(223,232)"></td> <!-- 3 -->
         <td><input type="text" id="c224" onkeyup="reverseValue(224,242)"></td> <!-- 4 -->
@@ -200,7 +201,7 @@
         <td><input type="text" id="c2214"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ЗК"></td> <!-- 1 -->
+        <td><input type="text" id="c231" value="ЗК"></td> <!-- 1 -->
         <td><input type="text" id="c232" onkeyup="reverseValue(232,223)"></td> <!-- 2 -->
         <td><input type="text" id="c233" value="1.000"></td> <!-- 3 -->
         <td><input type="text" id="c234" onkeyup="reverseValue(234,243)"></td> <!-- 4 -->
@@ -216,7 +217,7 @@
         <td><input type="text" id="c2314"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="УВ"></td> <!-- 1 -->
+        <td><input type="text" id="c241" value="УВ"></td> <!-- 1 -->
         <td><input type="text" id="c242" onkeyup="reverseValue(242,224)"></td> <!-- 2 -->
         <td><input type="text" id="c243" onkeyup="reverseValue(243,243)"></td> <!-- 3 -->
         <td><input type="text" id="c244" value="1.000"></td> <!-- 4 -->
@@ -232,7 +233,7 @@
         <td><input type="text" id="c2414"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="МП"></td> <!-- 1 -->
+        <td><input type="text" id="c251" value="МП"></td> <!-- 1 -->
         <td><input type="text" id="c252" onkeyup="reverseValue(252,225)"></td> <!-- 2 -->
         <td><input type="text" id="c253" onkeyup="reverseValue(253,235)"></td> <!-- 3 -->
         <td><input type="text" id="c254" onkeyup="reverseValue(254,245)"></td> <!-- 4 -->
@@ -248,7 +249,7 @@
         <td><input type="text" id="c2514" value="1.41"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="ВК"></td> <!-- 1 -->
+        <td><input type="text" id="c261"  value="ВК"></td> <!-- 1 -->
         <td><input type="text" id="c262" onkeyup="reverseValue(262,226)"></td> <!-- 2 -->
         <td><input type="text" id="c263" onkeyup="reverseValue(263,236)"></td> <!-- 3 -->
         <td><input type="text" id="c264" onkeyup="reverseValue(264,246)"></td> <!-- 4 -->
@@ -264,7 +265,7 @@
         <td><input type="text" id="c2614"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 7 -->
-        <td><input type="text" value="ПВ"></td> <!-- 1 -->
+        <td><input type="text" id="c271" value="ПВ"></td> <!-- 1 -->
         <td><input type="text" id="c272" onkeyup="reverseValue(272,227)"></td> <!-- 2 -->
         <td><input type="text" id="c273" onkeyup="reverseValue(273,237)"></td> <!-- 3 -->
         <td><input type="text" id="c274" value="1.000"></td> <!-- 4 -->
@@ -278,7 +279,7 @@
         <td><input type="text" id="c2712"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="І"></td> <!-- 1 -->
+        <td><input type="text" id="c281" value="І"></td> <!-- 1 -->
         <td><input type="text" id="c282" onkeyup="reverseValue(282,228)"></td> <!-- 2 -->
         <td><input type="text" id="c283" onkeyup="reverseValue(283,238)"></td> <!-- 3 -->
         <td><input type="text" id="c284" onkeyup="reverseValue(284,248)"></td> <!-- 4 -->
@@ -292,7 +293,7 @@
         <td><input type="text" id="c2812"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="В"></td> <!-- 1 -->
+        <td><input type="text" id="c291" value="В"></td> <!-- 1 -->
         <td><input type="text" id="c292" onkeyup="reverseValue(292,229)"></td> <!-- 2 -->
         <td><input type="text" id="c293" onkeyup="reverseValue(293,239)"></td> <!-- 3 -->
         <td><input type="text" id="c294" onkeyup="reverseValue(294,249)"></td> <!-- 4 -->
@@ -316,25 +317,25 @@
         0.167,	5.000,	4.000,	0.200,	0.200,	4.000,	1.000,	0.200,
         0.333,	5.000,	6.000,	0.333,	0.500,	5.000,	5.000,	1.000)" value="default">
 <input type="button" onclick="calculate(2,8,13,8,10)" value="Calculate">
-<p>Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Нейтралізовано чинники кризи»</p>
+<p id="p13">Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Нейтралізовано чинники кризи»</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text" value="НЧК"></td> <!-- 1 -->
-        <td><input type="text" value="НК"></td> <!-- 2 -->
-        <td><input type="text" value="ЗК"></td> <!-- 3 -->
-        <td><input type="text" value="УВ"></td> <!-- 4 -->
-        <td><input type="text" value="МП"></td> <!-- 5 -->
-        <td><input type="text" value="ВК"></td> <!-- 6 -->
-        <td><input type="text" value="ПВ"></td> <!-- 7 -->
-        <td><input type="text" value="І"></td> <!-- 8 -->
-        <td><input type="text" value="В"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 4"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c311" value="НЧК"></td> <!-- 1 -->
+        <td><input type="text" id="c312" value="НК"></td> <!-- 2 -->
+        <td><input type="text" id="c313" value="ЗК"></td> <!-- 3 -->
+        <td><input type="text" id="c314" value="УВ"></td> <!-- 4 -->
+        <td><input type="text" id="c315" value="МП"></td> <!-- 5 -->
+        <td><input type="text" id="c316" value="ВК"></td> <!-- 6 -->
+        <td><input type="text" id="c317" value="ПВ"></td> <!-- 7 -->
+        <td><input type="text" id="c318" value="І"></td> <!-- 8 -->
+        <td><input type="text" id="c319" value="В"></td> <!-- 9 -->
+        <td><input type="text" id="c3110" value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c3111" value="Вектор спосіб 4"></td> <!-- 11 -->
+        <td><input type="text" id="c3112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c3113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="НК"></td> <!-- 1 -->
+        <td><input type="text" id="c321" value="НК"></td> <!-- 1 -->
         <td><input type="text" id="c322" value="1.000"></td> <!-- 2 -->
         <td><input type="text" id="c323" onkeyup="reverseValue(323,332)"></td> <!-- 3 -->
         <td><input type="text" id="c324" onkeyup="reverseValue(324,342)"></td> <!-- 4 -->
@@ -350,7 +351,7 @@
         <td><input type="text" id="c3214"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ЗК"></td> <!-- 1 -->
+        <td><input type="text" id="c331" value="ЗК"></td> <!-- 1 -->
         <td><input type="text" id="c332" onkeyup="reverseValue(332,323)"></td> <!-- 2 -->
         <td><input type="text" id="c333" value="1.000"></td> <!-- 3 -->
         <td><input type="text" id="c334" onkeyup="reverseValue(334,343)"></td> <!-- 4 -->
@@ -366,7 +367,7 @@
         <td><input type="text" id="c3314"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="УВ"></td> <!-- 1 -->
+        <td><input type="text" id="c341" value="УВ"></td> <!-- 1 -->
         <td><input type="text" id="c342" onkeyup="reverseValue(342,324)"></td> <!-- 2 -->
         <td><input type="text" id="c343" onkeyup="reverseValue(343,343)"></td> <!-- 3 -->
         <td><input type="text" id="c344" value="1.000"></td> <!-- 4 -->
@@ -382,7 +383,7 @@
         <td><input type="text" id="c3414"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="МП"></td> <!-- 1 -->
+        <td><input type="text" id="c351" value="МП"></td> <!-- 1 -->
         <td><input type="text" id="c352" onkeyup="reverseValue(352,325)"></td> <!-- 2 -->
         <td><input type="text" id="c353" onkeyup="reverseValue(353,335)"></td> <!-- 3 -->
         <td><input type="text" id="c354" onkeyup="reverseValue(354,345)"></td> <!-- 4 -->
@@ -398,7 +399,7 @@
         <td><input type="text" id="c3514" value="1.41"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="ВК"></td> <!-- 1 -->
+        <td><input type="text" id="c361" value="ВК"></td> <!-- 1 -->
         <td><input type="text" id="c362" onkeyup="reverseValue(362,326)"></td> <!-- 2 -->
         <td><input type="text" id="c363" onkeyup="reverseValue(363,336)"></td> <!-- 3 -->
         <td><input type="text" id="c364" onkeyup="reverseValue(364,346)"></td> <!-- 4 -->
@@ -414,7 +415,7 @@
         <td><input type="text" id="c3614"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 7 -->
-        <td><input type="text" value="ПВ"></td> <!-- 1 -->
+        <td><input type="text" id="c371" value="ПВ"></td> <!-- 1 -->
         <td><input type="text" id="c372" onkeyup="reverseValue(372,327)"></td> <!-- 2 -->
         <td><input type="text" id="c373" onkeyup="reverseValue(373,337)"></td> <!-- 3 -->
         <td><input type="text" id="c374" value="1.000"></td> <!-- 4 -->
@@ -428,7 +429,7 @@
         <td><input type="text" id="c3712"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="І"></td> <!-- 1 -->
+        <td><input type="text" id="c381" value="І"></td> <!-- 1 -->
         <td><input type="text" id="c382" onkeyup="reverseValue(382,328)"></td> <!-- 2 -->
         <td><input type="text" id="c383" onkeyup="reverseValue(383,338)"></td> <!-- 3 -->
         <td><input type="text" id="c384" onkeyup="reverseValue(384,348)"></td> <!-- 4 -->
@@ -442,7 +443,7 @@
         <td><input type="text" id="c3812"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="В"></td> <!-- 1 -->
+        <td><input type="text" id="c391" value="В"></td> <!-- 1 -->
         <td><input type="text" id="c392" onkeyup="reverseValue(392,329)"></td> <!-- 2 -->
         <td><input type="text" id="c393" onkeyup="reverseValue(393,339)"></td> <!-- 3 -->
         <td><input type="text" id="c394" onkeyup="reverseValue(394,349)"></td> <!-- 4 -->
@@ -466,25 +467,25 @@
         0.250,	5.000,	5.000,	0.500,	2.000,	5.000,	1.000,	3.000,
         0.200,	1.000,	0.500,	0.250,	2.000,	3.000,	0.333,	1.000)"  value="default">
 <input type="button" onclick="calculate(3,8,13,8,10)" value="Calculate">
-<p>Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Забезпечено підготовленість дій під час кризи»</p>
+<p id="p14">Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Забезпечено підготовленість дій під час кризи»</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text" value="ЗПД"></td> <!-- 1 -->
-        <td><input type="text" value="НК"></td> <!-- 2 -->
-        <td><input type="text" value="ЗК"></td> <!-- 3 -->
-        <td><input type="text" value="УВ"></td> <!-- 4 -->
-        <td><input type="text" value="МП"></td> <!-- 5 -->
-        <td><input type="text" value="ВК"></td> <!-- 6 -->
-        <td><input type="text" value="ПВ"></td> <!-- 7 -->
-        <td><input type="text" value="І"></td> <!-- 8 -->
-        <td><input type="text" value="В"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 4"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c411" value="ЗПД"></td> <!-- 1 -->
+        <td><input type="text" id="c412" value="НК"></td> <!-- 2 -->
+        <td><input type="text" id="c413" value="ЗК"></td> <!-- 3 -->
+        <td><input type="text" id="c414" value="УВ"></td> <!-- 4 -->
+        <td><input type="text" id="c415" value="МП"></td> <!-- 5 -->
+        <td><input type="text" id="c416" value="ВК"></td> <!-- 6 -->
+        <td><input type="text" id="c417" value="ПВ"></td> <!-- 7 -->
+        <td><input type="text" id="c418" value="І"></td> <!-- 8 -->
+        <td><input type="text" id="c419" value="В"></td> <!-- 9 -->
+        <td><input type="text" id="c4110" value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c4111" value="Вектор спосіб 4"></td> <!-- 11 -->
+        <td><input type="text" id="c4112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c4113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="НК"></td> <!-- 1 -->
+        <td><input type="text" id="c421" value="НК"></td> <!-- 1 -->
         <td><input type="text" id="c422" value="1.000"></td> <!-- 2 -->
         <td><input type="text" id="c423" onkeyup="reverseValue(423,432)"></td> <!-- 3 -->
         <td><input type="text" id="c424" onkeyup="reverseValue(424,442)"></td> <!-- 4 -->
@@ -500,7 +501,7 @@
         <td><input type="text" id="c4214"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ЗК"></td> <!-- 1 -->
+        <td><input type="text" id="c431" value="ЗК"></td> <!-- 1 -->
         <td><input type="text" id="c432" onkeyup="reverseValue(432,423)"></td> <!-- 2 -->
         <td><input type="text" id="c433" value="1.000"></td> <!-- 3 -->
         <td><input type="text" id="c434" onkeyup="reverseValue(434,443)"></td> <!-- 4 -->
@@ -516,7 +517,7 @@
         <td><input type="text" id="c4314"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="УВ"></td> <!-- 1 -->
+        <td><input type="text" id="c441" value="УВ"></td> <!-- 1 -->
         <td><input type="text" id="c442" onkeyup="reverseValue(442,424)"></td> <!-- 2 -->
         <td><input type="text" id="c443" onkeyup="reverseValue(443,443)"></td> <!-- 3 -->
         <td><input type="text" id="c444" value="1.000"></td> <!-- 4 -->
@@ -532,7 +533,7 @@
         <td><input type="text" id="c4414"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="МП"></td> <!-- 1 -->
+        <td><input type="text" id="c451" value="МП"></td> <!-- 1 -->
         <td><input type="text" id="c452" onkeyup="reverseValue(452,425)"></td> <!-- 2 -->
         <td><input type="text" id="c453" onkeyup="reverseValue(453,435)"></td> <!-- 3 -->
         <td><input type="text" id="c454" onkeyup="reverseValue(454,445)"></td> <!-- 4 -->
@@ -548,7 +549,7 @@
         <td><input type="text" id="c4514" value="1.41"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="ВК"></td> <!-- 1 -->
+        <td><input type="text" id="c461" value="ВК"></td> <!-- 1 -->
         <td><input type="text" id="c462" onkeyup="reverseValue(462,426)"></td> <!-- 2 -->
         <td><input type="text" id="c463" onkeyup="reverseValue(463,436)"></td> <!-- 3 -->
         <td><input type="text" id="c464" onkeyup="reverseValue(464,446)"></td> <!-- 4 -->
@@ -564,7 +565,7 @@
         <td><input type="text" id="c4614"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 7 -->
-        <td><input type="text" value="ПВ"></td> <!-- 1 -->
+        <td><input type="text" id="c471" value="ПВ"></td> <!-- 1 -->
         <td><input type="text" id="c472" onkeyup="reverseValue(472,427)"></td> <!-- 2 -->
         <td><input type="text" id="c473" onkeyup="reverseValue(473,437)"></td> <!-- 3 -->
         <td><input type="text" id="c474" value="1.000"></td> <!-- 4 -->
@@ -578,7 +579,7 @@
         <td><input type="text" id="c4712"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="І"></td> <!-- 1 -->
+        <td><input type="text" id="c481" value="І"></td> <!-- 1 -->
         <td><input type="text" id="c482" onkeyup="reverseValue(482,428)"></td> <!-- 2 -->
         <td><input type="text" id="c483" onkeyup="reverseValue(483,438)"></td> <!-- 3 -->
         <td><input type="text" id="c484" onkeyup="reverseValue(484,448)"></td> <!-- 4 -->
@@ -592,7 +593,7 @@
         <td><input type="text" id="c4812"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="В"></td> <!-- 1 -->
+        <td><input type="text" id="c491" value="В"></td> <!-- 1 -->
         <td><input type="text" id="c492" onkeyup="reverseValue(492,429)"></td> <!-- 2 -->
         <td><input type="text" id="c493" onkeyup="reverseValue(493,439)"></td> <!-- 3 -->
         <td><input type="text" id="c494" onkeyup="reverseValue(494,449)"></td> <!-- 4 -->
@@ -616,25 +617,25 @@
         0.500,	3.000,	3.000,	0.200,	3.000,	3.000,	1.000,	5.000,
         0.167,	0.500,	0.333,	0.143,	0.333,	0.250,	0.200,	1.000)" value="default">
 <input type="button" onclick="calculate(4,8,13,8,10)" value="Calculate">
-<p>Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Відновлений імідж та репутація держави»</p>
+<p id="p15">Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Відновлений імідж та репутація держави»</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text" value="ВІтаРД"></td> <!-- 1 -->
-        <td><input type="text" value="НК"></td> <!-- 2 -->
-        <td><input type="text" value="ЗК"></td> <!-- 3 -->
-        <td><input type="text" value="УВ"></td> <!-- 4 -->
-        <td><input type="text" value="МП"></td> <!-- 5 -->
-        <td><input type="text" value="ВК"></td> <!-- 6 -->
-        <td><input type="text" value="ПВ"></td> <!-- 7 -->
-        <td><input type="text" value="І"></td> <!-- 8 -->
-        <td><input type="text" value="В"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 4"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c511" value="ВІтаРД"></td> <!-- 1 -->
+        <td><input type="text" id="c512" value="НК"></td> <!-- 2 -->
+        <td><input type="text" id="c513" value="ЗК"></td> <!-- 3 -->
+        <td><input type="text" id="c514" value="УВ"></td> <!-- 4 -->
+        <td><input type="text" id="c515" value="МП"></td> <!-- 5 -->
+        <td><input type="text" id="c516" value="ВК"></td> <!-- 6 -->
+        <td><input type="text" id="c517" value="ПВ"></td> <!-- 7 -->
+        <td><input type="text" id="c518" value="І"></td> <!-- 8 -->
+        <td><input type="text" id="c519" value="В"></td> <!-- 9 -->
+        <td><input type="text" id="c5110" value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c5111" value="Вектор спосіб 4"></td> <!-- 11 -->
+        <td><input type="text" id="c5112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c5113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="НК"></td> <!-- 1 -->
+        <td><input type="text" id="c521" value="НК"></td> <!-- 1 -->
         <td><input type="text" id="c522" value="1.000"></td> <!-- 2 -->
         <td><input type="text" id="c523" onkeyup="reverseValue(523,532)"></td> <!-- 3 -->
         <td><input type="text" id="c524" onkeyup="reverseValue(524,542)"></td> <!-- 4 -->
@@ -650,7 +651,7 @@
         <td><input type="text" id="c5214"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ЗК"></td> <!-- 1 -->
+        <td><input type="text" id="c531" value="ЗК"></td> <!-- 1 -->
         <td><input type="text" id="c532" onkeyup="reverseValue(532,523)"></td> <!-- 2 -->
         <td><input type="text" id="c533" value="1.000"></td> <!-- 3 -->
         <td><input type="text" id="c534" onkeyup="reverseValue(534,543)"></td> <!-- 4 -->
@@ -666,7 +667,7 @@
         <td><input type="text" id="c5314"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="УВ"></td> <!-- 1 -->
+        <td><input type="text" id="c541" value="УВ"></td> <!-- 1 -->
         <td><input type="text" id="c542" onkeyup="reverseValue(542,524)"></td> <!-- 2 -->
         <td><input type="text" id="c543" onkeyup="reverseValue(543,543)"></td> <!-- 3 -->
         <td><input type="text" id="c544" value="1.000"></td> <!-- 4 -->
@@ -682,7 +683,7 @@
         <td><input type="text" id="c5414"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="МП"></td> <!-- 1 -->
+        <td><input type="text" id="c551" value="МП"></td> <!-- 1 -->
         <td><input type="text" id="c552" onkeyup="reverseValue(552,525)"></td> <!-- 2 -->
         <td><input type="text" id="c553" onkeyup="reverseValue(553,535)"></td> <!-- 3 -->
         <td><input type="text" id="c554" onkeyup="reverseValue(554,545)"></td> <!-- 4 -->
@@ -698,7 +699,7 @@
         <td><input type="text" id="c5514" value="1.41"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="ВК"></td> <!-- 1 -->
+        <td><input type="text" id="c561" value="ВК"></td> <!-- 1 -->
         <td><input type="text" id="c562" onkeyup="reverseValue(562,526)"></td> <!-- 2 -->
         <td><input type="text" id="c563" onkeyup="reverseValue(563,536)"></td> <!-- 3 -->
         <td><input type="text" id="c564" onkeyup="reverseValue(564,546)"></td> <!-- 4 -->
@@ -714,7 +715,7 @@
         <td><input type="text" id="c5614"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 7 -->
-        <td><input type="text" value="ПВ"></td> <!-- 1 -->
+        <td><input type="text" id="c571" value="ПВ"></td> <!-- 1 -->
         <td><input type="text" id="c572" onkeyup="reverseValue(572,527)"></td> <!-- 2 -->
         <td><input type="text" id="c573" onkeyup="reverseValue(573,537)"></td> <!-- 3 -->
         <td><input type="text" id="c574" value="1.000"></td> <!-- 4 -->
@@ -728,7 +729,7 @@
         <td><input type="text" id="c5712"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="І"></td> <!-- 1 -->
+        <td><input type="text" id="c581" value="І"></td> <!-- 1 -->
         <td><input type="text" id="c582" onkeyup="reverseValue(582,528)"></td> <!-- 2 -->
         <td><input type="text" id="c583" onkeyup="reverseValue(583,538)"></td> <!-- 3 -->
         <td><input type="text" id="c584" onkeyup="reverseValue(584,548)"></td> <!-- 4 -->
@@ -742,7 +743,7 @@
         <td><input type="text" id="c5812"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="В"></td> <!-- 1 -->
+        <td><input type="text" id="c591" value="В"></td> <!-- 1 -->
         <td><input type="text" id="c592" onkeyup="reverseValue(592,529)"></td> <!-- 2 -->
         <td><input type="text" id="c593" onkeyup="reverseValue(593,539)"></td> <!-- 3 -->
         <td><input type="text" id="c594" onkeyup="reverseValue(594,549)"></td> <!-- 4 -->
@@ -766,25 +767,25 @@
         0.200,	4.000,	8.000,	7.000,	3.000,	3.000,	1.000,	0.500,
         0.500,	8.000,	9.000,	7.000,	3.000,	4.000,	2.000,	1.000)" value="default">
 <input type="button" onclick="calculate(5,8,13,8,10)" value="Calculate">
-<p>Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Усунуто загрози»</p>
+<p id="p16">Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Усунуто загрози»</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text" value="УЗ"></td> <!-- 1 -->
-        <td><input type="text" value="НК"></td> <!-- 2 -->
-        <td><input type="text" value="ЗК"></td> <!-- 3 -->
-        <td><input type="text" value="УВ"></td> <!-- 4 -->
-        <td><input type="text" value="МП"></td> <!-- 5 -->
-        <td><input type="text" value="ВК"></td> <!-- 6 -->
-        <td><input type="text" value="ПВ"></td> <!-- 7 -->
-        <td><input type="text" value="І"></td> <!-- 8 -->
-        <td><input type="text" value="В"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 4"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c611" value="УЗ"></td> <!-- 1 -->
+        <td><input type="text" id="c612" value="НК"></td> <!-- 2 -->
+        <td><input type="text" id="c613" value="ЗК"></td> <!-- 3 -->
+        <td><input type="text" id="c614" value="УВ"></td> <!-- 4 -->
+        <td><input type="text" id="c615" value="МП"></td> <!-- 5 -->
+        <td><input type="text" id="c616" value="ВК"></td> <!-- 6 -->
+        <td><input type="text" id="c617" value="ПВ"></td> <!-- 7 -->
+        <td><input type="text" id="c618" value="І"></td> <!-- 8 -->
+        <td><input type="text" id="c619" value="В"></td> <!-- 9 -->
+        <td><input type="text" id="c6110" value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c6111" value="Вектор спосіб 4"></td> <!-- 11 -->
+        <td><input type="text" id="c6112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c6113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="НК"></td> <!-- 1 -->
+        <td><input type="text" id="c621" value="НК"></td> <!-- 1 -->
         <td><input type="text" id="c622" value="1.000"></td> <!-- 2 -->
         <td><input type="text" id="c623" onkeyup="reverseValue(623,632)"></td> <!-- 3 -->
         <td><input type="text" id="c624" onkeyup="reverseValue(624,642)"></td> <!-- 4 -->
@@ -800,7 +801,7 @@
         <td><input type="text" id="c6214"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ЗК"></td> <!-- 1 -->
+        <td><input type="text" id="c631" value="ЗК"></td> <!-- 1 -->
         <td><input type="text" id="c632" onkeyup="reverseValue(632,623)"></td> <!-- 2 -->
         <td><input type="text" id="c633" value="1.000"></td> <!-- 3 -->
         <td><input type="text" id="c634" onkeyup="reverseValue(634,643)"></td> <!-- 4 -->
@@ -816,7 +817,7 @@
         <td><input type="text" id="c6314"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="УВ"></td> <!-- 1 -->
+        <td><input type="text" id="c641" value="УВ"></td> <!-- 1 -->
         <td><input type="text" id="c642" onkeyup="reverseValue(642,624)"></td> <!-- 2 -->
         <td><input type="text" id="c643" onkeyup="reverseValue(643,643)"></td> <!-- 3 -->
         <td><input type="text" id="c644" value="1.000"></td> <!-- 4 -->
@@ -832,7 +833,7 @@
         <td><input type="text" id="c6414"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="МП"></td> <!-- 1 -->
+        <td><input type="text" id="c651" value="МП"></td> <!-- 1 -->
         <td><input type="text" id="c652" onkeyup="reverseValue(652,625)"></td> <!-- 2 -->
         <td><input type="text" id="c653" onkeyup="reverseValue(653,635)"></td> <!-- 3 -->
         <td><input type="text" id="c654" onkeyup="reverseValue(654,645)"></td> <!-- 4 -->
@@ -848,7 +849,7 @@
         <td><input type="text" id="c6514" value="1.41"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="ВК"></td> <!-- 1 -->
+        <td><input type="text" id="c661" value="ВК"></td> <!-- 1 -->
         <td><input type="text" id="c662" onkeyup="reverseValue(662,626)"></td> <!-- 2 -->
         <td><input type="text" id="c663" onkeyup="reverseValue(663,636)"></td> <!-- 3 -->
         <td><input type="text" id="c664" onkeyup="reverseValue(664,646)"></td> <!-- 4 -->
@@ -864,7 +865,7 @@
         <td><input type="text" id="c6614"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 7 -->
-        <td><input type="text" value="ПВ"></td> <!-- 1 -->
+        <td><input type="text" id="c671" value="ПВ"></td> <!-- 1 -->
         <td><input type="text" id="c672" onkeyup="reverseValue(672,627)"></td> <!-- 2 -->
         <td><input type="text" id="c673" onkeyup="reverseValue(673,637)"></td> <!-- 3 -->
         <td><input type="text" id="c674" value="1.000"></td> <!-- 4 -->
@@ -878,7 +879,7 @@
         <td><input type="text" id="c6712"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="І"></td> <!-- 1 -->
+        <td><input type="text" id="c681" value="І"></td> <!-- 1 -->
         <td><input type="text" id="c682" onkeyup="reverseValue(682,628)"></td> <!-- 2 -->
         <td><input type="text" id="c683" onkeyup="reverseValue(683,638)"></td> <!-- 3 -->
         <td><input type="text" id="c684" onkeyup="reverseValue(684,648)"></td> <!-- 4 -->
@@ -892,7 +893,7 @@
         <td><input type="text" id="c6812"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="В"></td> <!-- 1 -->
+        <td><input type="text" id="c691" value="В"></td> <!-- 1 -->
         <td><input type="text" id="c692" onkeyup="reverseValue(692,629)"></td> <!-- 2 -->
         <td><input type="text" id="c693" onkeyup="reverseValue(693,639)"></td> <!-- 3 -->
         <td><input type="text" id="c694" onkeyup="reverseValue(694,649)"></td> <!-- 4 -->
@@ -916,25 +917,25 @@
         7.000,	3.000,	7.000,	0.333,	6.000,	7.000,	1.000,	0.250,
         9.000,	9.000,	9.000,	0.500,	8.000,	6.000,	4.000,	1.000)" value="default">
 <input type="button" onclick="calculate(6,8,13,8,10)" value="Calculate">
-<p>Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Мінімізовано ризик»</p>
+<p id="p17">Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Мінімізовано ризик»</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text" value="МР"></td> <!-- 1 -->
-        <td><input type="text" value="НК"></td> <!-- 2 -->
-        <td><input type="text" value="ЗК"></td> <!-- 3 -->
-        <td><input type="text" value="УВ"></td> <!-- 4 -->
-        <td><input type="text" value="МП"></td> <!-- 5 -->
-        <td><input type="text" value="ВК"></td> <!-- 6 -->
-        <td><input type="text" value="ПВ"></td> <!-- 7 -->
-        <td><input type="text" value="І"></td> <!-- 8 -->
-        <td><input type="text" value="В"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 4"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c711" value="МР"></td> <!-- 1 -->
+        <td><input type="text" id="c712" value="НК"></td> <!-- 2 -->
+        <td><input type="text" id="c713" value="ЗК"></td> <!-- 3 -->
+        <td><input type="text" id="c714" value="УВ"></td> <!-- 4 -->
+        <td><input type="text" id="c715" value="МП"></td> <!-- 5 -->
+        <td><input type="text" id="c716" value="ВК"></td> <!-- 6 -->
+        <td><input type="text" id="c717" value="ПВ"></td> <!-- 7 -->
+        <td><input type="text" id="c718" value="І"></td> <!-- 8 -->
+        <td><input type="text" id="c719" value="В"></td> <!-- 9 -->
+        <td><input type="text" id="c7110" value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c7111" value="Вектор спосіб 4"></td> <!-- 11 -->
+        <td><input type="text" id="c7112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c7113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="НК"></td> <!-- 1 -->
+        <td><input type="text" id="c721" value="НК"></td> <!-- 1 -->
         <td><input type="text" id="c722" value="1.000"></td> <!-- 2 -->
         <td><input type="text" id="c723" onkeyup="reverseValue(723,732)"></td> <!-- 3 -->
         <td><input type="text" id="c724" onkeyup="reverseValue(724,742)"></td> <!-- 4 -->
@@ -950,7 +951,7 @@
         <td><input type="text" id="c7214"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ЗК"></td> <!-- 1 -->
+        <td><input type="text" id="c731" value="ЗК"></td> <!-- 1 -->
         <td><input type="text" id="c732" onkeyup="reverseValue(732,723)"></td> <!-- 2 -->
         <td><input type="text" id="c733" value="1.000"></td> <!-- 3 -->
         <td><input type="text" id="c734" onkeyup="reverseValue(734,743)"></td> <!-- 4 -->
@@ -966,7 +967,7 @@
         <td><input type="text" id="c7314"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="УВ"></td> <!-- 1 -->
+        <td><input type="text" id="c741" value="УВ"></td> <!-- 1 -->
         <td><input type="text" id="c742" onkeyup="reverseValue(742,724)"></td> <!-- 2 -->
         <td><input type="text" id="c743" onkeyup="reverseValue(743,743)"></td> <!-- 3 -->
         <td><input type="text" id="c744" value="1.000"></td> <!-- 4 -->
@@ -982,7 +983,7 @@
         <td><input type="text" id="c7414"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="МП"></td> <!-- 1 -->
+        <td><input type="text" id="c751" value="МП"></td> <!-- 1 -->
         <td><input type="text" id="c752" onkeyup="reverseValue(752,725)"></td> <!-- 2 -->
         <td><input type="text" id="c753" onkeyup="reverseValue(753,735)"></td> <!-- 3 -->
         <td><input type="text" id="c754" onkeyup="reverseValue(754,745)"></td> <!-- 4 -->
@@ -998,7 +999,7 @@
         <td><input type="text" id="c7514" value="1.41"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="ВК"></td> <!-- 1 -->
+        <td><input type="text" id="c761" value="ВК"></td> <!-- 1 -->
         <td><input type="text" id="c762" onkeyup="reverseValue(762,726)"></td> <!-- 2 -->
         <td><input type="text" id="c763" onkeyup="reverseValue(763,736)"></td> <!-- 3 -->
         <td><input type="text" id="c764" onkeyup="reverseValue(764,746)"></td> <!-- 4 -->
@@ -1014,7 +1015,7 @@
         <td><input type="text" id="c7614"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 7 -->
-        <td><input type="text" value="ПВ"></td> <!-- 1 -->
+        <td><input type="text" id="c771" value="ПВ"></td> <!-- 1 -->
         <td><input type="text" id="c772" onkeyup="reverseValue(772,727)"></td> <!-- 2 -->
         <td><input type="text" id="c773" onkeyup="reverseValue(773,737)"></td> <!-- 3 -->
         <td><input type="text" id="c774" value="1.000"></td> <!-- 4 -->
@@ -1028,7 +1029,7 @@
         <td><input type="text" id="c7712"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="І"></td> <!-- 1 -->
+        <td><input type="text" id="c781" value="І"></td> <!-- 1 -->
         <td><input type="text" id="c782" onkeyup="reverseValue(782,728)"></td> <!-- 2 -->
         <td><input type="text" id="c783" onkeyup="reverseValue(783,738)"></td> <!-- 3 -->
         <td><input type="text" id="c784" onkeyup="reverseValue(784,748)"></td> <!-- 4 -->
@@ -1042,7 +1043,7 @@
         <td><input type="text" id="c7812"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="В"></td> <!-- 1 -->
+        <td><input type="text" id="c791" value="В"></td> <!-- 1 -->
         <td><input type="text" id="c792" onkeyup="reverseValue(792,729)"></td> <!-- 2 -->
         <td><input type="text" id="c793" onkeyup="reverseValue(793,739)"></td> <!-- 3 -->
         <td><input type="text" id="c794" onkeyup="reverseValue(794,749)"></td> <!-- 4 -->
@@ -1066,25 +1067,25 @@
         2.000,	7.000,	5.000,	0.167,	1.000,	3.000,	1.000,	0.333,
         5.000,	8.000,	8.000,	0.250,	4.000,	5.000,	3.000,	1.000)" value="default">
 <input type="button" onclick="calculate(7,8,13,8,10)" value="Calculate">
-<p>Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Мінімізовано втрати»</p>
+<p id="p18">Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Мінімізовано втрати»</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text" value="МВ"></td> <!-- 1 -->
-        <td><input type="text" value="НК"></td> <!-- 2 -->
-        <td><input type="text" value="ЗК"></td> <!-- 3 -->
-        <td><input type="text" value="УВ"></td> <!-- 4 -->
-        <td><input type="text" value="МП"></td> <!-- 5 -->
-        <td><input type="text" value="ВК"></td> <!-- 6 -->
-        <td><input type="text" value="ПВ"></td> <!-- 7 -->
-        <td><input type="text" value="І"></td> <!-- 8 -->
-        <td><input type="text" value="В"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 4"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c811" value="МВ"></td> <!-- 1 -->
+        <td><input type="text" id="c812" value="НК"></td> <!-- 2 -->
+        <td><input type="text" id="c813" value="ЗК"></td> <!-- 3 -->
+        <td><input type="text" id="c814" value="УВ"></td> <!-- 4 -->
+        <td><input type="text" id="c815" value="МП"></td> <!-- 5 -->
+        <td><input type="text" id="c816" value="ВК"></td> <!-- 6 -->
+        <td><input type="text" id="c817" value="ПВ"></td> <!-- 7 -->
+        <td><input type="text" id="c818" value="І"></td> <!-- 8 -->
+        <td><input type="text" id="c819" value="В"></td> <!-- 9 -->
+        <td><input type="text" id="c8110" value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c8111" value="Вектор спосіб 4"></td> <!-- 11 -->
+        <td><input type="text" id="c8112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c8113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="НК"></td> <!-- 1 -->
+        <td><input type="text" id="c821" value="НК"></td> <!-- 1 -->
         <td><input type="text" id="c822" value="1.000"></td> <!-- 2 -->
         <td><input type="text" id="c823" onkeyup="reverseValue(823,832)"></td> <!-- 3 -->
         <td><input type="text" id="c824" onkeyup="reverseValue(824,842)"></td> <!-- 4 -->
@@ -1100,7 +1101,7 @@
         <td><input type="text" id="c8214"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ЗК"></td> <!-- 1 -->
+        <td><input type="text" id="c831" value="ЗК"></td> <!-- 1 -->
         <td><input type="text" id="c832" onkeyup="reverseValue(832,823)"></td> <!-- 2 -->
         <td><input type="text" id="c833" value="1.000"></td> <!-- 3 -->
         <td><input type="text" id="c834" onkeyup="reverseValue(834,843)"></td> <!-- 4 -->
@@ -1116,7 +1117,7 @@
         <td><input type="text" id="c8314"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="УВ"></td> <!-- 1 -->
+        <td><input type="text" id="c841" value="УВ"></td> <!-- 1 -->
         <td><input type="text" id="c842" onkeyup="reverseValue(842,824)"></td> <!-- 2 -->
         <td><input type="text" id="c843" onkeyup="reverseValue(843,843)"></td> <!-- 3 -->
         <td><input type="text" id="c844" value="1.000"></td> <!-- 4 -->
@@ -1132,7 +1133,7 @@
         <td><input type="text" id="c8414"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="МП"></td> <!-- 1 -->
+        <td><input type="text" id="c851" value="МП"></td> <!-- 1 -->
         <td><input type="text" id="c852" onkeyup="reverseValue(852,825)"></td> <!-- 2 -->
         <td><input type="text" id="c853" onkeyup="reverseValue(853,835)"></td> <!-- 3 -->
         <td><input type="text" id="c854" onkeyup="reverseValue(854,845)"></td> <!-- 4 -->
@@ -1148,7 +1149,7 @@
         <td><input type="text" id="c8514" value="1.41"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="ВК"></td> <!-- 1 -->
+        <td><input type="text" id="c861" value="ВК"></td> <!-- 1 -->
         <td><input type="text" id="c862" onkeyup="reverseValue(862,826)"></td> <!-- 2 -->
         <td><input type="text" id="c863" onkeyup="reverseValue(863,836)"></td> <!-- 3 -->
         <td><input type="text" id="c864" onkeyup="reverseValue(864,846)"></td> <!-- 4 -->
@@ -1164,7 +1165,7 @@
         <td><input type="text" id="c8614"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 7 -->
-        <td><input type="text" value="ПВ"></td> <!-- 1 -->
+        <td><input type="text" id="c871" value="ПВ"></td> <!-- 1 -->
         <td><input type="text" id="c872" onkeyup="reverseValue(872,827)"></td> <!-- 2 -->
         <td><input type="text" id="c873" onkeyup="reverseValue(873,837)"></td> <!-- 3 -->
         <td><input type="text" id="c874" value="1.000"></td> <!-- 4 -->
@@ -1178,7 +1179,7 @@
         <td><input type="text" id="c8712"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="І"></td> <!-- 1 -->
+        <td><input type="text" id="c881" value="І"></td> <!-- 1 -->
         <td><input type="text" id="c882" onkeyup="reverseValue(882,828)"></td> <!-- 2 -->
         <td><input type="text" id="c883" onkeyup="reverseValue(883,838)"></td> <!-- 3 -->
         <td><input type="text" id="c884" onkeyup="reverseValue(884,848)"></td> <!-- 4 -->
@@ -1192,7 +1193,7 @@
         <td><input type="text" id="c8812"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="В"></td> <!-- 1 -->
+        <td><input type="text" id="c891" value="В"></td> <!-- 1 -->
         <td><input type="text" id="c892" onkeyup="reverseValue(892,829)"></td> <!-- 2 -->
         <td><input type="text" id="c893" onkeyup="reverseValue(893,839)"></td> <!-- 3 -->
         <td><input type="text" id="c894" onkeyup="reverseValue(894,849)"></td> <!-- 4 -->
@@ -1216,25 +1217,25 @@
         0.333,	6.000,	7.000,	0.200,	1.000,	3.000,	1.000,	0.250,
         2.000,	8.000,	8.000,	0.500,	4.000,	6.000,	4.000,	1.000,)" value="default">
 <input type="button" onclick="calculate(8,8,13,8,10)" value="Calculate">
-<p>Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Використано можливості»</p>
+<p id="p19">Порівняння альтернатив реагування на кризу відносно критерію ефективності – «Використано можливості»</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text" value="ВМ"></td> <!-- 1 -->
-        <td><input type="text" value="НК"></td> <!-- 2 -->
-        <td><input type="text" value="ЗК"></td> <!-- 3 -->
-        <td><input type="text" value="УВ"></td> <!-- 4 -->
-        <td><input type="text" value="МП"></td> <!-- 5 -->
-        <td><input type="text" value="ВК"></td> <!-- 6 -->
-        <td><input type="text" value="ПВ"></td> <!-- 7 -->
-        <td><input type="text" value="І"></td> <!-- 8 -->
-        <td><input type="text" value="В"></td> <!-- 9 -->
-        <td><input type="text" value="Вектор спосіб 1"></td> <!-- 10 -->
-        <td><input type="text" value="Вектор спосіб 4"></td> <!-- 11 -->
-        <td><input type="text" value="Cik"></td> <!-- 12 -->
-        <td><input type="text" value="Інші коефіцієнти"></td> <!-- 13 -->
+        <td><input type="text" id="c911" value="ВМ"></td> <!-- 1 -->
+        <td><input type="text" id="c912" value="НК"></td> <!-- 2 -->
+        <td><input type="text" id="c913" value="ЗК"></td> <!-- 3 -->
+        <td><input type="text" id="c914" value="УВ"></td> <!-- 4 -->
+        <td><input type="text" id="c915" value="МП"></td> <!-- 5 -->
+        <td><input type="text" id="c916" value="ВК"></td> <!-- 6 -->
+        <td><input type="text" id="c917" value="ПВ"></td> <!-- 7 -->
+        <td><input type="text" id="c918" value="І"></td> <!-- 8 -->
+        <td><input type="text" id="c919" value="В"></td> <!-- 9 -->
+        <td><input type="text" id="c9110" value="Вектор спосіб 1"></td> <!-- 10 -->
+        <td><input type="text" id="c9111" value="Вектор спосіб 4"></td> <!-- 11 -->
+        <td><input type="text" id="c9112" value="Cik"></td> <!-- 12 -->
+        <td><input type="text" id="c9113" value="Інші коефіцієнти"></td> <!-- 13 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="НК"></td> <!-- 1 -->
+        <td><input type="text" id="c921" value="НК"></td> <!-- 1 -->
         <td><input type="text" id="c922" value="1.000"></td> <!-- 2 -->
         <td><input type="text" id="c923" onkeyup="reverseValue(923,932)"></td> <!-- 3 -->
         <td><input type="text" id="c924" onkeyup="reverseValue(924,942)"></td> <!-- 4 -->
@@ -1250,7 +1251,7 @@
         <td><input type="text" id="c9214"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ЗК"></td> <!-- 1 -->
+        <td><input type="text" id="c931" value="ЗК"></td> <!-- 1 -->
         <td><input type="text" id="c932" onkeyup="reverseValue(932,923)"></td> <!-- 2 -->
         <td><input type="text" id="c933" value="1.000"></td> <!-- 3 -->
         <td><input type="text" id="c934" onkeyup="reverseValue(934,943)"></td> <!-- 4 -->
@@ -1266,7 +1267,7 @@
         <td><input type="text" id="c9314"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="УВ"></td> <!-- 1 -->
+        <td><input type="text" id="c941" value="УВ"></td> <!-- 1 -->
         <td><input type="text" id="c942" onkeyup="reverseValue(942,924)"></td> <!-- 2 -->
         <td><input type="text" id="c943" onkeyup="reverseValue(943,943)"></td> <!-- 3 -->
         <td><input type="text" id="c944" value="1.000"></td> <!-- 4 -->
@@ -1282,7 +1283,7 @@
         <td><input type="text" id="c9414"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="МП"></td> <!-- 1 -->
+        <td><input type="text" id="c951" value="МП"></td> <!-- 1 -->
         <td><input type="text" id="c952" onkeyup="reverseValue(952,925)"></td> <!-- 2 -->
         <td><input type="text" id="c953" onkeyup="reverseValue(953,935)"></td> <!-- 3 -->
         <td><input type="text" id="c954" onkeyup="reverseValue(954,945)"></td> <!-- 4 -->
@@ -1298,7 +1299,7 @@
         <td><input type="text" id="c9514" value="1.41"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="ВК"></td> <!-- 1 -->
+        <td><input type="text" id="c961" value="ВК"></td> <!-- 1 -->
         <td><input type="text" id="c962" onkeyup="reverseValue(962,926)"></td> <!-- 2 -->
         <td><input type="text" id="c963" onkeyup="reverseValue(963,936)"></td> <!-- 3 -->
         <td><input type="text" id="c964" onkeyup="reverseValue(964,946)"></td> <!-- 4 -->
@@ -1314,7 +1315,7 @@
         <td><input type="text" id="c9614"></td> <!-- 14 -->
     </tr>
     <tr> <!-- 7 -->
-        <td><input type="text" value="ПВ"></td> <!-- 1 -->
+        <td><input type="text" id="c971" value="ПВ"></td> <!-- 1 -->
         <td><input type="text" id="c972" onkeyup="reverseValue(972,927)"></td> <!-- 2 -->
         <td><input type="text" id="c973" onkeyup="reverseValue(973,937)"></td> <!-- 3 -->
         <td><input type="text" id="c974" value="1.000"></td> <!-- 4 -->
@@ -1328,7 +1329,7 @@
         <td><input type="text" id="c9712"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="І"></td> <!-- 1 -->
+        <td><input type="text" id="c981" value="І"></td> <!-- 1 -->
         <td><input type="text" id="c982" onkeyup="reverseValue(982,928)"></td> <!-- 2 -->
         <td><input type="text" id="c983" onkeyup="reverseValue(983,938)"></td> <!-- 3 -->
         <td><input type="text" id="c984" onkeyup="reverseValue(984,948)"></td> <!-- 4 -->
@@ -1342,7 +1343,7 @@
         <td><input type="text" id="c9812"></td> <!-- 12 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="В"></td> <!-- 1 -->
+        <td><input type="text" id="c991" value="В"></td> <!-- 1 -->
         <td><input type="text" id="c992" onkeyup="reverseValue(992,929)"></td> <!-- 2 -->
         <td><input type="text" id="c993" onkeyup="reverseValue(993,939)"></td> <!-- 3 -->
         <td><input type="text" id="c994" onkeyup="reverseValue(994,949)"></td> <!-- 4 -->
@@ -1366,22 +1367,22 @@
         0.333,	2.000,	0.200,	0.500,	3.000,	0.250,	1.000,	4.000,
         0.167,	0.333,	0.200,	0.167,	0.333,	0.200,	0.250,	1.000)" value="default">
 <input type="button" onclick="calculate(9,8,13,8,10)" value="Calculate">
-<p>Глобальні пріоритети альтернатив відносно глобальної мети</p>
+<p id="110">Глобальні пріоритети альтернатив відносно глобальної мети</p>
 <table>
     <tr> <!-- 1 -->
-        <td><input type="text" value=""></td> <!-- 1 -->
-        <td><input type="text" value="ВЧК"></td> <!-- 2 -->
-        <td><input type="text" value="НЧК"></td> <!-- 3 -->
-        <td><input type="text" value="ЗПД"></td> <!-- 4 -->
-        <td><input type="text" value="ВІтаРД"></td> <!-- 5 -->
-        <td><input type="text" value="УЗ"></td> <!-- 6 -->
-        <td><input type="text" value="МР"></td> <!-- 7 -->
-        <td><input type="text" value="МВ"></td> <!-- 8 -->
-        <td><input type="text" value="ВМ"></td> <!-- 9 -->
-        <td><input type="text" value="Результат:"></td> <!-- 10 -->
+        <td><input type="text" id="c1011" value=""></td> <!-- 1 -->
+        <td><input type="text" id="c1012" value="ВЧК"></td> <!-- 2 -->
+        <td><input type="text" id="c1013" value="НЧК"></td> <!-- 3 -->
+        <td><input type="text" id="c1014" value="ЗПД"></td> <!-- 4 -->
+        <td><input type="text" id="c1015" value="ВІтаРД"></td> <!-- 5 -->
+        <td><input type="text" id="c1016" value="УЗ"></td> <!-- 6 -->
+        <td><input type="text" id="c1017" value="МР"></td> <!-- 7 -->
+        <td><input type="text" id="c1018" value="МВ"></td> <!-- 8 -->
+        <td><input type="text" id="c1019" value="ВМ"></td> <!-- 9 -->
+        <td><input type="text" id="c10110" value="Результат:"></td> <!-- 10 -->
     </tr>
     <tr> <!-- 2 -->
-        <td><input type="text" value="НК"></td> <!-- 1 -->
+        <td><input type="text" id="c1021" value="НК"></td> <!-- 1 -->
         <td><input type="text" id="c1022"></td> <!-- 2 -->
         <td><input type="text" id="c1023"></td> <!-- 3 -->
         <td><input type="text" id="c1024"></td> <!-- 4 -->
@@ -1393,7 +1394,7 @@
         <td><input type="text" id="c10210"></td> <!-- 10 -->
     </tr>
     <tr> <!-- 3 -->
-        <td><input type="text" value="ЗК"></td> <!-- 1 -->
+        <td><input type="text" id="c1031" value="ЗК"></td> <!-- 1 -->
         <td><input type="text" id="c1032"></td> <!-- 2 -->
         <td><input type="text" id="c1033"></td> <!-- 3 -->
         <td><input type="text" id="c1034"></td> <!-- 4 -->
@@ -1405,7 +1406,7 @@
         <td><input type="text" id="c10310"></td> <!-- 10 -->
     </tr>
     <tr> <!-- 4 -->
-        <td><input type="text" value="УВ"></td> <!-- 1 -->
+        <td><input type="text" id="c1041" value="УВ"></td> <!-- 1 -->
         <td><input type="text" id="c1042"></td> <!-- 2 -->
         <td><input type="text" id="c1043"></td> <!-- 3 -->
         <td><input type="text" id="c1044"></td> <!-- 4 -->
@@ -1416,7 +1417,7 @@
         <td><input type="text" id="c1049"></td> <!-- 9 -->
         <td><input type="text" id="c10410"></td> <!-- 10 -->    </tr>
     <tr> <!-- 5 -->
-        <td><input type="text" value="МП"></td> <!-- 1 -->
+        <td><input type="text" id="c1051" value="МП"></td> <!-- 1 -->
         <td><input type="text" id="c1052"></td> <!-- 2 -->
         <td><input type="text" id="c1053"></td> <!-- 3 -->
         <td><input type="text" id="c1054"></td> <!-- 4 -->
@@ -1428,7 +1429,7 @@
         <td><input type="text" id="c10510"></td> <!-- 10 -->
     </tr>
     <tr> <!-- 6 -->
-        <td><input type="text" value="ВК"></td> <!-- 1 -->
+        <td><input type="text" id="c1061" value="ВК"></td> <!-- 1 -->
         <td><input type="text" id="c1062"></td> <!-- 2 -->
         <td><input type="text" id="c1063"></td> <!-- 3 -->
         <td><input type="text" id="c1064"></td> <!-- 4 -->
@@ -1440,7 +1441,7 @@
         <td><input type="text" id="c10610"></td> <!-- 10 -->
     </tr>
     <tr>
-        <td><input type="text" value="ПВ"></td> <!-- 1 -->
+        <td><input type="text" id="c1071" value="ПВ"></td> <!-- 1 -->
         <td><input type="text" id="c1072"></td> <!-- 2 -->
         <td><input type="text" id="c1073"></td> <!-- 3 -->
         <td><input type="text" id="c1074"></td> <!-- 4 -->
@@ -1452,7 +1453,7 @@
         <td><input type="text" id="c10710"></td> <!-- 10 -->
     </tr>
     <tr> <!-- 8 -->
-        <td><input type="text" value="ІВ"></td> <!-- 1 -->
+        <td><input type="text" id="c1081" value="ІВ"></td> <!-- 1 -->
         <td><input type="text" id="c1082"></td> <!-- 2 -->
         <td><input type="text" id="c1083"></td> <!-- 3 -->
         <td><input type="text" id="c1084"></td> <!-- 4 -->
@@ -1464,7 +1465,7 @@
         <td><input type="text" id="c10810"></td> <!-- 10 -->
     </tr>
     <tr> <!-- 9 -->
-        <td><input type="text" value="В"></td> <!-- 1 -->
+        <td><input type="text" id="c1091" value="В"></td> <!-- 1 -->
         <td><input type="text" id="c1092"></td> <!-- 2 -->
         <td><input type="text" id="c1093"></td> <!-- 3 -->
         <td><input type="text" id="c1094"></td> <!-- 4 -->
@@ -1477,5 +1478,6 @@
     </tr>
 </table>
 <input type="button" onclick="calculateFinal(8,8,10,11,10)" value="Calculate">
+<input type="button" onclick="generateCSV()" value="GenerateCSV">
 </body>
 </html>
