@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="538dce3c-26d8-454a-8fd0-e1ece9d01ec3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dce1s.html" beforeDir="false" afterPath="$PROJECT_DIR$/dce1s.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dce2s.html" beforeDir="false" afterPath="$PROJECT_DIR$/dce2s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dce3s.html" beforeDir="false" afterPath="$PROJECT_DIR$/dce3s.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dce2s.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -99,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dce3s.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-780">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="393">
+              <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -141,7 +140,6 @@
         <option value="$PROJECT_DIR$/tables3start.html" />
         <option value="$PROJECT_DIR$/tables1Start.html" />
         <option value="$PROJECT_DIR$/dce2t.html" />
-        <option value="$PROJECT_DIR$/dce3s.html" />
         <option value="$PROJECT_DIR$/theory.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/contacts.html" />
@@ -151,10 +149,11 @@
         <option value="$PROJECT_DIR$/src/js/js3p.js" />
         <option value="$PROJECT_DIR$/dce1s.html" />
         <option value="$PROJECT_DIR$/dce2s.html" />
+        <option value="$PROJECT_DIR$/dce3s.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -237,15 +236,15 @@
       <workItem from="1538977657021" duration="2066000" />
       <workItem from="1542654548170" duration="60000" />
       <workItem from="1544905632473" duration="164000" />
-      <workItem from="1550694455528" duration="702000" />
+      <workItem from="1550694455528" duration="980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20465000" />
+    <option name="totallyTimeSpent" value="20743000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
@@ -368,17 +367,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dce3s.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dce2s.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dce3s.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
         </state>
       </provider>
     </entry>
